@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_imageView"
+        android:background="@android:color/darker_gray"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="2dp"
+        />
+    <TextView
+        android:id="@+id/item_titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/item_imageView"
+        android:layout_marginTop="8dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/item_distanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/item_titleTextView"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/item_imageView"
+        />
+
+    <ImageView
+        android:id="@+id/item_categoryImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/item_imageView"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_below="@id/item_distanceTextView"
+        />
+
+    <TextView
+        android:id="@+id/item_categoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/item_distanceTextView"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/item_categoryImage"
+        />
+
+    <TextView
+        android:id="@+id/item_descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/item_imageView"
+        android:layout_below="@id/item_distanceTextView"
+        android:layout_marginTop="0dp"
+        />
+
+    <TextView
+        android:id="@+id/item_isClosedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/item_distanceTextView"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_isClosedTextView"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/arrow"/>
+</RelativeLayout>
